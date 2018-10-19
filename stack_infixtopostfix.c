@@ -1,4 +1,5 @@
-#include<stdio.h>
+/*simple program forconverting infix expression to postfix*/
+#include<stdio.h> 
 char stack[20];
 int top = -1;
 void push(char x)
@@ -24,7 +25,7 @@ int priority(char x)
         return 2;
 }
 
-main()
+int main()   // main program starts
 {
     char exp[20];
     char *e, x;
